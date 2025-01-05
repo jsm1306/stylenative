@@ -1,12 +1,16 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React from 'react';
+import styles from '../utils/style';
+import { View, Text, TouchableOpacity } from 'react-native';
 
-const Age = () => {
+const App = () => {
+
   return (
-    
-      <Text>My Age is 18</Text>
-   
-  )
-}
-
-export default Age
+    <View style={styles.page}>
+      <Text style={styles.title}>Attack on Titan Quiz</Text>
+     <TouchableOpacity style={[styles.TouchableOpacity,styles.TouchableOpacityText]}onPress={()=>alert("You pressed me")}>
+      <Text style={styles.TouchableOpacityText}>Press Me</Text>
+      </TouchableOpacity> 
+    </View>
+  );
+};
+export default App;

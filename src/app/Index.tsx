@@ -10,13 +10,7 @@ import styles from '../utils/style'
 const index = () => {
   return (
     <View style={styles.page}>
-      <Age />
-      <Name />
-     <ImageComponents />
-     <ExternalStyle />
-     <TextComponents />
-     
-        <ArrayofObjects />
+      <Age/>
     </View>
 
   )

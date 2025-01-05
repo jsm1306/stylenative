@@ -1,11 +1,9 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Touchable, TouchableOpacity } from "react-native";
 const styles = StyleSheet.create({
     page: {
         flex: 1,
-        backgroundColor: '#c6def1',
-        fontFamily: 'Arial',
-        // alignItems: 'center',
-        // justifyContent: 'center',
+        backgroundColor: '#DED9E2',
+        alignItems: 'center',
     },
     title: {
         fontSize: 24,
@@ -16,19 +14,20 @@ const styles = StyleSheet.create({
         fontSize: 18,
         marginBottom: 8,
     },
-    button: {
-        backgroundColor: '#f9a826',
+    TouchableOpacity: {
+        backgroundColor: '#80A1D4',
         padding: 12,
         borderRadius: 8,
         marginTop: 16,
-        width: 400,
+        width: 100,
     },
-    buttonText: {
+    TouchableOpacityText: {
         color: 'white',
         fontSize: 16,
         fontWeight: 'bold',
         alignItems: 'center',
         justifyContent: 'center',
+        display: 'flex',
     },
 });
 export default styles;
